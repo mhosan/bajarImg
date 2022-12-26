@@ -9,7 +9,6 @@ const longitude = -57.9535;
 const latitude = -34.9213;
 
 // La URL de la API de Mapbox que usaremos para descargar la imagen
-//const url = `https://api.mapbox.com/v4/mapbox.satellite/${longitude},${latitude},17/800x800.png?access_token=${accessToken}`;
 const url = `https://api.mapbox.com/v4/mapbox.satellite/${longitude},${latitude},15/800x800.png?access_token=${accessToken}`;
 
 // La función que descarga la imagen y la guarda en un archivo

@@ -25,12 +25,8 @@ const downloadImage = (url, fileName) => {
         .pipe(fs.createWriteStream(`${downloadDir}/${fileName}`));
 };
 
-
-// Generamos la URL de descarga de la imagen satelital
-//const imageUrl = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/static/${longitude},${latitude},${zoom}/${dimensions}x${dimensions}@2x?access_token=${accessToken}`;
-
-// Descargamos diez imágenes satelitales a partir de la URL generada
-for (let i = 0; i < 15; i++) {
+// Descargamos diez imágenes satelitales a partir de una URL
+for (let i = 0; i < 5; i++) {
     const latitude = -34.9213; // Latitud de La Plata, Argentina
     const longitude = -57.9535; // Longitud de La Plata, Argentina
     const distance = 25000; // Distancia entre imágenes en metros
